@@ -1,3 +1,288 @@
 body {
-  background: purple;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1120px;
+  min-width: 320px;
+}
+
+/****** header ******/
+.menu-bar {
+  display: none;
+}
+
+.header-container {
+  width: 100%;
+  padding: 70px 32px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  box-sizing: border-box;
+}
+
+.main-logo {
+  width: 163px;
+  vertical-align: middle;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin: 0 7px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 3px;
+  transition: color 0.3s;
+}
+
+.header-link:hover {
+  color: #4c665b;
+}
+
+.header-social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: color 0.6s;
+}
+
+.header-social-icon {
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.header-social-media:hover {
+  color: #4c665b;
+}
+
+.header-social-icon:hover {
+  color: #333333;
+}
+
+/****** banner ******/
+.banner {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  align-items: end;
+  padding: 32px;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.banner-content {
+  padding-left: 30px;
+  display: grid;
+  grid-template-areas: "header ." "latest insta";
+}
+
+.banner-img-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner-content-header {
+  font-size: 36px;
+  width: 280px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  padding: 10px 0;
+  text-transform: uppercase;
+  grid-area: header;
+}
+
+.banner-latest {
+  width: 230px;
+}
+
+.banner-latest-container {
+  grid-area: latest;
+}
+
+.banner-insta-container {
+  grid-area: insta;
+}
+
+.banner-content-img-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner-bottom-text {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/****** subscribe ******/
+.subscribe {
+  margin: 32px;
+  background-color: #4c665b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 50px;
+}
+
+.subscribe-header {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  fsiz: 30px;
+}
+
+.subscribe-input {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.subscribe-mail {
+  width: 240px;
+}
+
+.subscribe-btn {
+  width: 170px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ebefee;
+  border: none;
+  cursor: pointer;
+}
+
+/****** intro ******/
+.intro {
+  padding: 32px 72px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.intro-header {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: 16px;
+}
+
+.intro-text {
+  font-weight: lighter;
+  text-align: justify;
+}
+
+/****** blog ******/
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-item {
+  padding: 24px;
+}
+
+.blog-img {
+  width: 100%;
+}
+
+.blog-img-container {
+  position: relative;
+}
+
+.blog-item-desc-container {
+  position: absolute;
+  bottom: -70px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.blog-item-desc {
+  width: 150px;
+  height: 140px;
+  background-color: #ecf0ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.underline {
+  background-color: #000000;
+  width: 45px;
+  height: 2px;
+  margin: 3px auto;
+  border: none;
+}
+
+.blog-desc-container {
+  margin-top: 90px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+/****** insta ******/
+.insta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.insta-item {
+  padding: 24px;
+}
+
+.insta-item-img {
+  width: 100%;
+}
+
+.insta-item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 24px;
+}
+
+/****** footer ******/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #000000;
+  padding: 40px;
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 40px;
+}
+
+.footer-copyrite {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
